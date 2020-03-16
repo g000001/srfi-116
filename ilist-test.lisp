@@ -1,13 +1,8 @@
-(cl:in-package :srfi-116.internal)
+(cl:in-package "https://github.com/g000001/srfi-116#internals")
+(in-readtable :rnrs)
 
 
-(in-readtable :rnrs+)
-
-
-(def-suite srfi-116)
-
-
-(in-suite srfi-116)
+(def-suite* srfi-116)
 
 
 (define (iequal? x y)

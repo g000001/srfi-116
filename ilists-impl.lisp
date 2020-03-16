@@ -1,5 +1,5 @@
-(cl:in-package :srfi-116.internal)
-(in-readtable :rnrs+)
+(cl:in-package "https://github.com/g000001/srfi-116#internals")
+(in-readtable :rnrs)
 
 ;;; SRFI-116 ilist-processing library 			-*- Scheme -*-
 ;;; Sample implementation

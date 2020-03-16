@@ -1,7 +1,7 @@
 ;;;; srfi-116.lisp -*- Mode: Lisp;-*- 
 
-(cl:in-package :srfi-116.internal)
-(in-readtable :rnrs+)
+(cl:in-package "https://github.com/g000001/srfi-116#internals")
+(in-readtable :rnrs)
 
 
 ;;;; Enhancements and hooks in Olin's SRFI-1 code to make it work for ilists
@@ -146,10 +146,10 @@
 ;;; Analogues of R5RS list routines (not defined by Olin)
 
 (define (iassq x lis)
-    (ifind (lambda (entry) (eq? x (icar entry))) lis))
+  (ifind (lambda (entry) (eq? x (icar entry))) lis))
 
 (define (iassv x lis)
-    (ifind (lambda (entry) (eqv? x (icar entry))) lis))
+  (ifind (lambda (entry) (eqv? x (icar entry))) lis))
 
 (define (imap proc lis1 . lists)
   (apply #'imap-in-order proc lis1 lists))
